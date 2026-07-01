@@ -42,7 +42,7 @@ cp .env.example .env
 
 Dieses Projekt befindet sich noch im Aufbau. Aktuell entstehen nach und nach die einzelnen Bausteine (siehe [Issues](../../issues)):
 
-- [ ] Projekt-Setup
+- [x] Projekt-Setup
 - [ ] Gemini API Client
 - [ ] Tools (Taschenrechner, Web-Suche, Dateisystem)
 - [ ] ReAct-Loop (Kernlogik)
