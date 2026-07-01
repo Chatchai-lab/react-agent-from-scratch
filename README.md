@@ -17,6 +17,27 @@ Der Agent kann:
 - [google-genai](https://github.com/googleapis/python-genai) (Gemini API, kostenloser Tier)
 - Kein Agenten-Framework — bewusst alles "from scratch"
 
+## Setup
+
+Voraussetzung: Python 3.11+
+
+```bash
+git clone https://github.com/Chatchai-lab/react-agent-from-scratch.git
+cd react-agent-from-scratch
+
+python3 -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+Anschließend einen kostenlosen Gemini-API-Key erstellen: [ai.google.dev](https://ai.google.dev)
+
+```bash
+cp .env.example .env
+# .env öffnen und GEMINI_API_KEY mit dem eigenen Key ausfüllen
+```
+
 ## 🚧 Status: In aktiver Entwicklung
 
 Dieses Projekt befindet sich noch im Aufbau. Aktuell entstehen nach und nach die einzelnen Bausteine (siehe [Issues](../../issues)):
