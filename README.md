@@ -38,6 +38,11 @@ cp .env.example .env
 # .env öffnen und GEMINI_API_KEY mit dem eigenen Key ausfüllen
 ```
 
+## Tools
+
+- **Taschenrechner** — sichere, `ast`-basierte Auswertung mathematischer Ausdrücke (kein `eval()`)
+- **Web-Suche** — nutzt [ddgs](https://pypi.org/project/ddgs/) (DuckDuckGo-Metasuche). Bewusst gewählt, weil kostenlos und **ohne API-Key** nutzbar — vermeidet ein weiteres Secret in `.env` und passt zum Free-Tier-Ansatz dieses Projekts. Alternativen wie Google Custom Search oder Bing Web Search erfordern jeweils eigene API-Keys/Setup.
+
 ## 🚧 Status: In aktiver Entwicklung
 
 Dieses Projekt befindet sich noch im Aufbau. Aktuell entstehen nach und nach die einzelnen Bausteine (siehe [Issues](../../issues)):
