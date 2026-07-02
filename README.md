@@ -42,6 +42,7 @@ cp .env.example .env
 
 - **Taschenrechner** — sichere, `ast`-basierte Auswertung mathematischer Ausdrücke (kein `eval()`)
 - **Web-Suche** — nutzt [ddgs](https://pypi.org/project/ddgs/) (DuckDuckGo-Metasuche). Bewusst gewählt, weil kostenlos und **ohne API-Key** nutzbar — vermeidet ein weiteres Secret in `.env` und passt zum Free-Tier-Ansatz dieses Projekts. Alternativen wie Google Custom Search oder Bing Web Search erfordern jeweils eigene API-Keys/Setup.
+- **Dateisystem** — `read_file` und `write_file` als zwei separate Tools statt einem Tool mit `action`-Parameter: kleinere, eindeutige Schemas pro Tool, und Gemini kann nicht `action="write"` ohne `content` senden, weil das Schema es für `read_file` gar nicht erst anbietet. Beide sind strikt auf das Verzeichnis `workspace/` gesandboxt (Pfad-Traversal via `../` und absolute Pfade werden zuverlässig blockiert), Datei- und Inhaltsgröße sind auf 100 KB begrenzt.
 
 ## 🚧 Status: In aktiver Entwicklung
 
